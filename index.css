@@ -1,0 +1,164 @@
+:root {
+	--bg: rgba(31, 31, 31, 0.70);
+	--btn-hover: #4b4b4b;
+	--grey: #858585;
+	--border: #323232;
+}
+* {
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.container {
+	width: 323px;
+	background: var(--bg);
+	color: #fff;
+	font-family: 'Geneva', Arial, sans-serif;
+	border: 1px solid #555;
+	margin: 15vh auto;
+	backdrop-filter: blur(10px);
+	overflow: none;
+}
+button {
+  background-position: center;
+  transition: background 0.2s;
+}
+button:focus {
+	outline: none;
+}
+
+
+.title-bar {
+	display: flex;
+	height: 35px;
+	color: var(--grey);
+	font-size: 0.8rem;
+	background-color: none;
+}
+.title {
+	margin: 10px 10px;
+}
+.win-btns {
+	display: inline-block;
+	margin-left: auto;
+}
+.win-btn {
+	width: 45px;
+	height: 30px;
+	display: inline-block;
+	text-align: center;
+	line-height: 2rem;
+	font-size: 1.6rem;
+}
+.win-btn:hover,
+.nav-btn:hover {
+	color: #fff;
+	background-color: var(--btn-hover);
+}
+.fullscrn {
+	position: relative;
+	bottom: 3px;
+	padding-bottom: 6px;
+}
+.close:hover {
+	background-color: #e81123;
+}
+
+/* --- Nav Bar --- */
+.nav-bar {
+	font-size: 1.2rem;
+	margin: 0px;
+	width: 323px;
+}
+.nav-btn {
+	height: 40px;
+	width: 40px;
+	font-size: 1.2rem;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid rgba(0, 0, 0, 0);
+}
+.mode {
+	line-height: 2.5rem;
+}
+.history {
+	position: relative;
+	float: right;
+	margin-right: 2px;
+}
+.fas {
+	-webkit-text-stroke: 1px var(--bg);
+}
+
+/* --- Displays --- */
+.preview-display {
+	font-size: .8rem;
+	height: 35px;
+	text-align: right;
+	margin: 0 25px
+}
+.number-display {
+	color: #fff;
+	font-size: 3.1rem;
+	height: 70px;
+	text-align: right;
+	margin: 0 15px;
+	letter-spacing: 2px;
+	overflow: hidden;
+}
+
+/* --- Settings Buttons --- */
+.setting-btns {
+	display: flex;
+}
+.setting-btn {
+	width: 50px;
+	height: 30px;
+	margin: 0 auto;
+	color: #fff;
+	background-color: rgba(0, 0, 0, 0);
+	border: 1px solid rgba(0, 0, 0, 0);
+	font-size: 0.8rem;
+	transform: scaleY(0.9);
+}
+
+/* --- All Button Hover --- */
+.MCMR{
+    color: gray;
+}
+.setting-btn:not(.MCMR):hover,
+.big-btn:hover,
+.nav-btn:hover {
+	border: 1px solid #888;
+	background-color: var(--btn-hover);
+}
+
+/* --- Large Buttons --- */
+.big-btns {
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	gap: 1px 1px;
+	padding: 2px 4px;
+}
+.big-btn {
+	height: 50px;
+	border: 1px solid var(--bg);
+	color: #fff;
+	font-size: 1.1em;
+	background-color: rgba(17, 17, 17, 0.7);
+}
+.math-btn {
+	font-size: 1.8rem;
+}
+.curly {
+	font-family: "Times New Roman", Times, serif;
+	font-style: italic;
+}
+.dark {
+	background-color: #000;
+	font-weight: 600;
+}
+.equal {
+	background-color: rgba(57, 57, 57, 0.7);
+}
+

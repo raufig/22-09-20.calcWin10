@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <div class='container'>
+
+        <div class='title-bar'>
+            <span class='title'>Calculator</span>
+            <div class='win-btns'>
+                <span class='win-btn'>&minus;</span>
+                <span class='win-btn fullscrn'>&#9633</span>
+                <span class='win-btn close'>&times;</span>
+            </div>
+        </div>
+   
+        <div class='nav-bar'>
+            <button class='nav-btn'><i class="fas fa-bars"></i></button>
+            <span class='mode'>Standard</span>
+            <button class='nav-btn'><i class="fas fa-expand-arrows-alt"></i></button>
+            <button class='nav-btn history'><i class="fas fa-history"></i></button>
+        </div>
+        
+        <span class='preview-display' id="preview-display"></span>
+        <div class='number-display' id="number-display">
+            <span class='num-inputs' id="num-inputs" ></span>
+        </div>
+        
+        <div class='buttons'>
+            
+            <div class='setting-btns'>
+                <button class='setting-btn MCMR'>MC</button>
+                <button class='setting-btn MCMR'>MR</button>
+                <button class='setting-btn'>M+</button>
+                <button class='setting-btn'>M-</button>
+                <button class='setting-btn'>MS</button>
+                <button class='setting-btn'>M^</button>
+            </div>
+            
+            <div class='big-btns' id="big-btns">
+                <button class='big-btn'>%</button>
+                <button class='big-btn'>CE</button>
+                <button class='big-btn'>C</button>
+                <button class='big-btn fas fa-backspace'></button>
+                <button class='big-btn curly'>&sup1/x</button>
+                <button class='big-btn curly'>x&sup2</button>
+                <button class='big-btn curly'>&sup2;&radic;x</button>
+                <button class='big-btn math-btn thisOpe' value="/">&divide;</button>
+                <button class='big-btn dark thisNum' value="7">7</button>
+                <button class='big-btn dark thisNum' value="8">8</button>
+                <button class='big-btn dark thisNum' value="9">9</button>
+                <button class='big-btn math-btn thisOpe' value="×">×</button>
+                <button class='big-btn dark thisNum' value="4">4</button>
+                <button class='big-btn dark thisNum' value="5">5</button>
+                <button class='big-btn dark thisNum' value="6">6</button>
+                <button class='big-btn math-btn thisOpe'value="-">-</button>
+                <button class='big-btn dark thisNum'value="1">1</button>
+                <button class='big-btn dark thisNum' value="2">2</button>
+                <button class='big-btn dark thisNum' value="3">3</button>
+                <button class='big-btn math-btn thisOpe' value="+">+</button>
+                <button class='big-btn dark math-btn'value="+/-">+/-</button>
+                <button class='big-btn dark thisNum' value="0">0</button>
+                <button class='big-btn dark thisNum'value=".">.</button>
+                <button class='big-btn equal math-btn' value="=">=</button>
+            </div>
+        </div>
+    
+    </div>
+    <script src="https://kit.fontawesome.com/da7bec95d4.js" crossorigin="anonymous"></script>
+    <script src="index.js"></script>
+    
+</body>
+</html>
